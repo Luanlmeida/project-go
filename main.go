@@ -3,22 +3,24 @@ package main
 import "fmt"
 
 func main() {
-	var taskOne = "Watch Golang Full course"
+	var fullGolang = "Watch Golang Full course"
+	var shortGolang = "Watch Go crash course"
+	var rewardDessert = "Reward my self with a donut"
 
 	fmt.Println("##### Welcome to Todolist App ##### \n")
 
 	fmt.Println("List of my Todos")
-	fmt.Println("Watch Go crash course")
-	fmt.Println(taskOne)
-	fmt.Println("Reward my self with a donut")
+	fmt.Println(shortGolang)
+	fmt.Println(fullGolang)
+	fmt.Println(rewardDessert)
 
 	fmt.Println()
 	fmt.Println("Tutorials")
-	fmt.Println("Watch Go crash course")
-	fmt.Println(taskOne)
+	fmt.Println(shortGolang)
+	fmt.Println(fullGolang)
 
 	fmt.Println()
 	fmt.Println("Rewards")
-	fmt.Println("Reward my self with a donut")
+	fmt.Println(rewardDessert)
 
 }
