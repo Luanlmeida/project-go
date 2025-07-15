@@ -3,7 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	var taskItens = []string{"Watch Go crash course", "Reward my self with a donut", "Watch Golang Full course"}
+	var fullGolang = "Watch Golang Full course"
+	var shortGolang = "Watch Go crash course"
+	var rewardDessert = "Reward my self with a donut"
+
+	taskItens := []string{fullGolang, shortGolang, rewardDessert}
 
 	fmt.Println("##### Welcome to our Todolist App! #####")
 
