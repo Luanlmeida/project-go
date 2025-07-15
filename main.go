@@ -12,5 +12,8 @@ func main() {
 	fmt.Println("##### Welcome to our Todolist App! #####")
 
 	fmt.Println("List of my Todos")
-	fmt.Println(taskItens)
+
+	for index, task := range taskItens {
+		fmt.Println(index, task)
+	}
 }
