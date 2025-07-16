@@ -9,11 +9,15 @@ func main() {
 	var fullGolang = "Watch Golang Full course"
 	var shortGolang = "Watch Go crash course"
 	var rewardDessert = "Reward my self with a donut"
-	var taskItens = []string{fullGolang, shortGolang, rewardDessert}
+	var taskItems = []string{fullGolang, shortGolang, rewardDessert}
 
-	printTasks(taskItens)
+	printTasks(taskItems)
 	fmt.Println()
-	addTaks(taskItens, "Go for a run")
+
+	taskItems = addTaks(taskItems, "Go for a run")
+
+	fmt.Println()
+	printTasks(taskItems)
 }
 
 func printTasks(taskItens []string) {
@@ -23,7 +27,7 @@ func printTasks(taskItens []string) {
 	}
 }
 
-func addTaks(taskItens []string, newTask string) {
+func addTaks(taskItens []string, newTask string) []string {
 	var updatedTaskItems = append(taskItens, newTask)
-	printTasks(updatedTaskItems)
+	return updatedTaskItems
 }
