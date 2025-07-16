@@ -15,6 +15,7 @@ func main() {
 	fmt.Println()
 
 	taskItems = addTaks(taskItems, "Go for a run")
+	taskItems = addTaks(taskItems, "Practice coding in Go")
 
 	fmt.Println()
 	printTasks(taskItems)
