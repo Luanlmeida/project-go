@@ -12,12 +12,18 @@ func main() {
 	var taskItens = []string{fullGolang, shortGolang, rewardDessert}
 
 	printTasks(taskItens)
+	fmt.Println()
+	addTaks(taskItens, "Go for a run")
 }
 
 func printTasks(taskItens []string) {
 	fmt.Println("List of my Todos")
 	for index, task := range taskItens {
-		fmt.Println(index+1, ".", task)
 		fmt.Printf("%d: %s\n", index+1, task)
 	}
+}
+
+func addTaks(taskItens []string, newTask string) {
+	var updatedTaskItems = append(taskItens, newTask)
+	printTasks(updatedTaskItems)
 }
