@@ -27,15 +27,3 @@ func showTasks(writter http.ResponseWriter, request *http.Request) {
 		fmt.Fprintln(writter, task)
 	}
 }
-
-func printTasks(taskItens []string) {
-	fmt.Println("List of my Todos")
-	for index, task := range taskItens {
-		fmt.Printf("%d: %s\n", index+1, task)
-	}
-}
-
-func addTaks(taskItens []string, newTask string) []string {
-	var updatedTaskItems = append(taskItens, newTask)
-	return updatedTaskItems
-}
