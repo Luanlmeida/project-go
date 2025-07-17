@@ -23,7 +23,9 @@ func helloUser(writter http.ResponseWriter, request *http.Request) {
 }
 
 func showTasks(writter http.ResponseWriter, request *http.Request) {
-
+	for _, task := range taskItems {
+		fmt.Fprintln(writter, task)
+	}
 }
 
 func printTasks(taskItens []string) {
